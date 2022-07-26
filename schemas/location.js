@@ -1,5 +1,5 @@
-// import countries from "../data/contries";
-// import useWithTag from "../util/useWithTag";
+import countries from "../cxostories/data/contries";
+import useWithTag from "../cxostories/util/useWithTag";
 export default {
   name: "location",
   title: "Location",
@@ -14,16 +14,16 @@ export default {
         Rule.max(100).error("City name must be less than 100 characters long"),
       ],
     },
-    // {
-    //   name: "country",
-    //   title: "Country",
-    //   type: "tag",
-    //   validation: (Rule) => Rule.required().error("Please select the country."),
-    //   options: {
-    //     predefinedTags: useWithTag(countries),
-    //     allowCreate: false,
-    //   },
-    // },
+    {
+      name: "country",
+      title: "Country",
+      type: "tag",
+      validation: (Rule) => Rule.required().error("Please select the country."),
+      options: {
+        predefinedTags: useWithTag(countries),
+        allowCreate: false,
+      },
+    },
     {
       name: "image",
       type: "image",
