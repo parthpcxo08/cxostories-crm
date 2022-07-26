@@ -1,0 +1,15 @@
+export default [
+  "CFOcircle",
+  "CIOcircle",
+  "CISOcircle",
+  "CMOcircle",
+  "CXOcircle",
+  "CFOonline",
+  "CIOonline",
+  "CISOonline",
+  "CMOonline",
+  "CXOonline",
+  "CXuncut",
+  "HRuncut",
+  "DevState",
+];

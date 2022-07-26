@@ -1,0 +1,52 @@
+/*
+  Learn more:
+  https://www.sanity.io/guides/how-to-brand-your-studio
+*/
+
+/* Custom fonts */
+
+/* @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+:root {
+  /* Brand colors */
+
+  /* --brand-primary: var(--brand-primary);
+  --brand-primary--inverted: #ffffff;
+  --brand-secondary: #ffa800;
+  --brand-secondary--inverted: #3c1609; */
+
+  /* Typography */
+  /*
+  
+  --font-size-base: 18px;
+  --text-color: var(--brand-secondary--inverted);
+  */
+  /* Main Navigation */
+  /*
+  --main-navigation-color: var(--brand-secondary);
+  --main-navigation-color--inverted: var(--brand-secondary--inverted);
+  */
+  --font-family-sans-serif: 'Poppins';
+  /* Brand colors */
+  /* --brand-primary: #061ba7;
+  --brand-primary--inverted: #ffffff;
+  --brand-secondary: #0826e7;
+  --brand-secondary--inverted: #3c1609; */
+
+  /* Main Navigation */
+  /* --main-navigation-color: var(--brand-secondary);
+   --main-navigation-color--inverted: var(--brand-secondary--inverted); */
+}
+
+.widget_container_31kEB {
+  border-radius: 25px
+}
+
+.eiuRZM {
+  border-radius: 0.2rem;
+}
+
+.DocumentList_header_H-I-8 {
+  padding: 0.5rem 0.7rem !important;
+}
