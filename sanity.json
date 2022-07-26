@@ -12,7 +12,9 @@
     "@sanity/default-layout",
     "@sanity/default-login",
     "@sanity/desk-tool",
-    "tags"
+    "tags",
+    "markdown",
+    "@sanity/components"
   ],
   "env": {
     "development": {
@@ -23,8 +25,24 @@
   },
   "parts": [
     {
+      "name": "part:@sanity/desk-tool/structure",
+      "path": "./cxostories/structure/cxodesk.js"
+    },
+    {
       "name": "part:@sanity/base/schema",
-      "path": "./schemas/schema"
+      "path": "./cxostories/schemas/schema.js"
+    },
+    {
+      "implements": "part:@sanity/base/theme/variables/override-style",
+      "path": "./cxostories/styles/variables.css"
+    },
+    {
+      "implements": "part:@sanity/base/brand-logo",
+      "path": "./cxostories/components/CXOlogoComponent.js"
+    },
+    {
+      "implements": "part:@sanity/base/app-loading-screen",
+      "path": "./cxostories/components/CXOloaderComponent.js"
     }
   ]
 }

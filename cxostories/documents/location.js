@@ -1,5 +1,5 @@
-import countries from "../cxostories/data/contries";
-import useWithTag from "../cxostories/util/useWithTag";
+import countries from "../data/contries";
+import useWithTag from "../util/useWithTag";
 export default {
   name: "location",
   title: "Location",
