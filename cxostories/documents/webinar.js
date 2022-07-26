@@ -116,13 +116,19 @@ export default {
       name: "keynote",
       title: "Keynote",
       description: "OPTIONAL",
-      type: "reference",
-
-      to: [{ type: "keynote" }],
-      options: {
-        // disableNew: true,
-      },
+      type: "KeynoteControl",
     },
+    // {
+    //   name: "keynote",
+    //   title: "Keynote",
+    //   description: "OPTIONAL",
+    //   type: "reference",
+
+    //   to: [{ type: "keynote" }],
+    //   options: {
+    //     // disableNew: true,
+    //   },
+    // },
     {
       name: "sponsors",
       title: "Sponsors",

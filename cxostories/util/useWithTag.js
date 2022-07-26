@@ -1,6 +1,6 @@
 // @author Parth Patel
 // @for converting array list to key value pair for tags input view
-export default (list) => {
+export default (list ,defaultOption = null) => {
   // console.log(list);
   let data = [];
   if (list && list?.length > 0) {

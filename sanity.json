@@ -9,21 +9,29 @@
   },
   "plugins": [
     "@sanity/base",
+    "@sanity/components",
     "@sanity/default-layout",
     "@sanity/default-login",
+    "@sanity/dashboard",
     "@sanity/desk-tool",
+    "dashboard-widget-structure-menu",
     "tags",
     "markdown",
-    "@sanity/components"
+    "dashboard-widget-document-list"
   ],
   "env": {
     "development": {
       "plugins": [
-        "@sanity/vision"
+        "@sanity/vision",
+        "dashboard-widget-netlify"
       ]
     }
   },
   "parts": [
+    {
+      "implements": "part:@sanity/dashboard/config",
+      "path": "./cxostories/config/cxoconfig.js"
+    },
     {
       "name": "part:@sanity/desk-tool/structure",
       "path": "./cxostories/structure/cxodesk.js"

@@ -1,7 +1,9 @@
+import { MdDomain } from "react-icons/md";
 export default {
   name: "sponsor",
   title: "Sponsor",
   type: "document",
+  icon: MdDomain,
   validation: (Rule) => Rule.required(),
   fields: [
     {

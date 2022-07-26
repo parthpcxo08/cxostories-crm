@@ -1,9 +1,11 @@
 import audience from "../data/audience";
 import useWithTag from "../util/useWithTag";
+import { MdCommentBank } from "react-icons/md";
 export default {
   name: "testimonial",
   title: "Testimonial",
   type: "document",
+  icon: MdCommentBank,
   fields: [
     {
       name: "markdown",

@@ -1,7 +1,9 @@
+import { HiSpeakerphone } from "react-icons/hi";
 export default {
   name: "speaker",
   title: "Speaker",
   type: "document",
+  icon: HiSpeakerphone,
   fields: [
     {
       name: "name",

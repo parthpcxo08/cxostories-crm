@@ -1,9 +1,11 @@
 import countries from "../data/contries";
 import useWithTag from "../util/useWithTag";
+import { MdPinDrop } from "react-icons/md";
 export default {
   name: "location",
   title: "Location",
   type: "document",
+  icon: MdPinDrop,
   fields: [
     {
       name: "city",

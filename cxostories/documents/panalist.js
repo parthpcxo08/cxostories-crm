@@ -1,11 +1,12 @@
 import audience from "../data/audience";
 import panel from "../data/panel";
 import useWithTag from "../util/useWithTag";
-
+import { MdSupervisedUserCircle } from "react-icons/md";
 export default {
   name: "panelist",
   title: "Panelist",
   type: "document",
+  icon: MdSupervisedUserCircle,
   fields: [
     {
       name: "name",

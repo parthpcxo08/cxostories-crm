@@ -1,7 +1,9 @@
+import { MdPersonPin } from "react-icons/md";
 export default {
   name: "moderator",
   title: "Moderator",
   type: "document",
+  icon: MdPersonPin,
   fields: [
     {
       name: "name",
