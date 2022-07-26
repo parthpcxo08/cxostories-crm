@@ -17,13 +17,13 @@
     "dashboard-widget-structure-menu",
     "tags",
     "markdown",
-    "dashboard-widget-document-list"
+    "dashboard-widget-document-list",
+    "dashboard-widget-netlify"
   ],
   "env": {
     "development": {
       "plugins": [
-        "@sanity/vision",
-        "dashboard-widget-netlify"
+        "@sanity/vision"
       ]
     }
   },
