@@ -26,7 +26,10 @@ export default {
       title: "Language (OPTIONAL)",
       type: "tag",
       options: {
-        predefinedTags: [{label : '--NA--', value: ""},...useWithTag(language)],
+        predefinedTags: [
+          { label: "--NA--", value: "" },
+          ...useWithTag(language),
+        ],
         allowCreate: false,
         reactSelectOptions: {
           // isClearable: true,
@@ -73,7 +76,10 @@ export default {
       title: "Industry (OPTIONAL)",
       type: "tag",
       options: {
-        predefinedTags: [{label : '--NA--', value: ""},...useWithTag(industry)],
+        predefinedTags: [
+          { label: "--NA--", value: "" },
+          ...useWithTag(industry),
+        ],
         allowCreate: false,
         reactSelectOptions: {
           // isClearable: true,
@@ -84,7 +90,7 @@ export default {
       name: "location",
       title: "Location (OPTIONAL)",
       type: "reference",
-      to: [{ type: "location"}],
+      to: [{ type: "location" }],
       options: {
         // disableNew: true,
         layout: "tags",
@@ -101,17 +107,6 @@ export default {
         // disableNew: true,
       },
     },
-    //   {
-    //     name: "poll",
-    //     title: "Poll",
-    //     description: "OPTIONAL",
-    //     type: "reference",
-
-    //     to: [{ type: "poll" }],
-    //     options: {
-    //       // disableNew: true,
-    //     },
-    //   },
     {
       name: "keynote",
       title: "Keynote",
@@ -221,16 +216,16 @@ export default {
       },
     },
     {
-      name: "landing_page",
+      name: "website",
       title: "Landing Page",
-      description: "OPTIONAl",
+      description: "OPTIONAL",
       type: "url",
     },
     {
       name: "vimeo_id",
       title: "Vimeo Id",
       description: "OPTIONAL",
-      type: "number",
+      type: "string",
     },
     {
       name: "vimeo_link",
@@ -256,7 +251,7 @@ export default {
       description: "Prediction Panel, WIT Panel, ...",
       type: "tag",
       options: {
-        predefinedTags: [{label : '--NA--', value: ""},...useWithTag(panel)],
+        predefinedTags: [{ label: "--NA--", value: "" }, ...useWithTag(panel)],
         allowCreate: false,
         reactSelectOptions: {
           // isClearable: true,
@@ -297,15 +292,19 @@ export default {
     },
     prepare(selection) {
       const { title, date, city, country } = selection;
-      // console.log(selection);
-      let name =
-        (date ? format(new Date(date), "MM-dd-yyyy") + " - " : "") + title
-          ? title
-          : "Untitled";
+      console.log(selection);
+
+      let d = "";
+      try {
+        d = format(new Date(date), "MM-dd-yyyy");
+      } catch (e) {
+        console.log("Handler-Exception:P :", e);
+      }
+      let name = title ? title : "Untitled";
       let location = city ? city + (country ? " - " + country.label : "") : "";
       return {
         title: name,
-        subtitle: location,
+        subtitle: location + ((d ?" | "+ d : "") ),
       };
     },
   },
